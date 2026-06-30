@@ -1,5 +1,5 @@
 *{
-    margin: 10;
+    margin: 0;
     padding: 0;
 }
 .sr-only{
@@ -53,7 +53,7 @@ span{
 }
 nav ul {
     display: flex ;
-    gap:40px ;
+    gap:30px ;
     margin: 15px 15px ;
     list-style: none;
     padding-top: 20px;
