@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*creation de variable couleur */
+    --purple:rgb(77, 0, 128) ;
+    --white : white ;
+    --black :black ;
+    --purple2 : rgb(244, 227, 244) ;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--purple2);
+}
+span{
+    color: var(--purple);
+}
+nav{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+nav div button {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px ;
+    padding: 20px;
+    border: none;
+    background-color: var(--purple);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+nav div button i {
+    color:var(--white);
+}
+nav div button:hover{
+    transition: 0.5s;
+    border:2px solid  var(--purple);
+    color:var(--purple) ;
+}
+#mainSection{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--purple2);
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    color: var(--black);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#mainSection div {
+  height: 300px ;
+  width: 200px;
+  background-color:var(--white);
+ border:2px solid var(--purple);
+ border-radius: 15px;
+ padding: 10px;
+}
+#mainSection div img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+#projectDES{
+    height: 140vh ;
+    width: 100%;
+    background-color: var(--purple2);
+}
+
+#projectDES div {
+    position: relative;
+    height: 200px;
+    width: 80%;
+    background-color:var(--purple);
+    margin:80px ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color:var(--white);
+    font-family: sans-serif;
+}
+.projectDES1  a{
+    color: var(--black);
+}
+.projectDES1  i {
+color:var(--white);
+font-size: 20px;
+}
+#projectDES div img { 
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* Tablettes (992px et moins) */
+@media screen and (max-width: 992px) {
+
+    #mainSection{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    #mainSection div{
+        width: 250px;
+    }
+
+    #projectDES{
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #projectDES div{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+}
+
+/* Téléphones (768px et moins) */
+@media screen and (max-width: 768px){
+
+    nav{
+        height: auto;
+    }
+
+    nav div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav div button{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    #mainSection{
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    #mainSection div{
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        padding: 20px;
+    }
+
+    #projectDES div{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    #projectDES div img{
+        margin: 0 0 20px 0;
+        width: 120px;
+        height: 120px;
+    }
+
+    #projectDES div p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+}
+
+/* Petits téléphones (480px et moins) */
+@media screen and (max-width: 480px){
+
+    #mainSection{
+        font-size: 16px;
+    }
+
+    #mainSection div{
+        width: 95%;
+    }
+
+    #projectDES div{
+        width: 95%;
+    }
+
+    #projectDES div img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #projectDES div p{
+        font-size: 15px;
+    }
+
+    nav div button{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        background-color: var(--purple);
+    }
+
+}
